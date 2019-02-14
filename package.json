@@ -1,0 +1,31 @@
+{
+  "name": "wiisteria",
+  "version": "1.0.0",
+  "description": "Wii and GameCube WBFS manager",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octoshrimpy/wiisteria.git"
+  },
+  "keywords": [
+    "wbfs",
+    "wii",
+    "manager",
+    "gamecube",
+    "homebrew"
+  ],
+  "author": "octoshrimpy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/octoshrimpy/wiisteria/issues"
+  },
+  "homepage": "https://github.com/octoshrimpy/wiisteria#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^4.0.4"
+  }
+}
