@@ -2,7 +2,7 @@
   "name": "wiisteria",
   "version": "1.0.0",
   "description": "Wii and GameCube WBFS manager",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,7 +24,9 @@
     "url": "https://github.com/octoshrimpy/wiisteria/issues"
   },
   "homepage": "https://github.com/octoshrimpy/wiisteria#readme",
-  "dependencies": {},
+  "dependencies": {
+    "electron-reload": "^1.4.0"
+  },
   "devDependencies": {
     "electron": "^4.0.4"
   }
