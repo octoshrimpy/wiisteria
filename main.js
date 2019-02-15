@@ -10,7 +10,7 @@ function createWindow() {
 
   window.loadFile('index.html')
 
-  window.webContents.openDevTools()
+  // window.webContents.openDevTools()
 
   window.on('closed', () => {
     window = null

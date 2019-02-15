@@ -3,11 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Wiisteria</title>
+    <link rel="stylesheet" href="./styles/main.min.css">
   </head>
   <body>
-    <h1>Hello testing!</h1>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <div class="main">
+      <div class="controls"></div>
+      <div class="local">
+        <div class="header">from:</div>
+      </div>
+      <div class="remote">
+        <div class="header">to:</div>
+      </div>
+    </div>
   </body>
 </html>
