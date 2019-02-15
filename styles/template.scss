@@ -1,3 +1,5 @@
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
+
 
 //colors
 $spinach : #2EB68A;
@@ -5,6 +7,13 @@ $mint    : #66D68E;
 $corn    : #E4CD57;
 $carrot  : #C8612D;
 $nori    : #2A272A;
+
+$salmon  : #BEA599;
+$sand    : #E0EBE3;
+$ginseng : #98AEA4;
+$indigo  : #5A5C67;
+$slate   : #35383D;
+
 
 $dark    : #5A595B;
 $dim     : #8B8B8D;
@@ -57,3 +66,22 @@ $shadow-border: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
     background: rgba(0,0,0,0.4);
   }
 }
+
+$wisteria-colors: ();
+$bulma-colors-additions: (
+  "spinach" : ($spinach, findColorInvert($spinach)),
+  "mint"    : ($mint, findColorInvert($mint)),
+  "corn"    : ($corn, findColorInvert($corn)),
+  "carrot"  : ($carrot, findColorInvert($carrot)),
+  "nori"    : ($nori, findColorInvert($nori)),
+
+  "salmon"  : ($salmon, findColorInvert($salmon)),
+  "sand"    : ($sand, findColorInvert($sand)),
+  "ginseng" : ($ginseng, findColorInvert($ginseng)),
+  "indigo"  : ($indigo, findColorInvert($indigo)),
+  "slate"   : ($slate, findColorInvert($slate)),
+);
+
+$primary : $spinach;
+
+$custom-colors: map_merge($bulma-colors-additions, $wisteria-colors);

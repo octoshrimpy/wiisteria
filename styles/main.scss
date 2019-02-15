@@ -1,4 +1,8 @@
+@import '../node_modules/bulma/sass/utilities/initial-variables'; // include helpers
 @import './template';
+@import '../node_modules/bulma/bulma.sass';
+
+
 
 html,
 body {
@@ -21,27 +25,39 @@ body {
   "local remote";
   grid-template-columns: auto;
   grid-template-rows: 4rem 1fr;
+  grid-gap: 0.25rem;
 
-  background: $nori;
+  background: $dim;
   color: $light;
 }
 
 .controls {
   grid-area: controls;
-  background: tomato;
+  background: $dark;
+  display: flex;
+  align-items: center;
+
+  .load-from {
+    input {
+      display: none;
+    }
+  }
 }
 
 .local {
   grid-area: local;
-  background: wheat;
 }
 
 .remote {
   grid-area: remote;
-  background: rebeccapurple;
+}
+
+.controls, .local, .remote {
+  padding: 0.5rem;
 }
 
 .local, .remote {
+  background: $nori;
 }
 
 //
